@@ -1,0 +1,5 @@
+{"level":"ERROR","timestamp":"2020-01-09 14:07:02.749","file":"model/init.go:32","msg":"Database connection failed. Database name: db_apiserver","data":{"error":"Error 1045: Access denied for user 'root'@'localhost' (using password: YES)"}}
+{"level":"INFO","timestamp":"2020-01-09 14:07:02.795","file":"demo09/main.go:59","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2020-01-09 14:07:03.300","file":"demo09/main.go:56","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2020-01-09 14:07:42.682","file":"middleware/logging.go:84","msg":"997.3µs       | ::1          | GET /v1/user | {code: 20103, message: The token was invalid.}"}
+{"level":"INFO","timestamp":"2020-01-09 14:08:11.669","file":"middleware/logging.go:84","msg":"0s            | ::1          | GET /v1/user | {code: 20103, message: The token was invalid.}"}
