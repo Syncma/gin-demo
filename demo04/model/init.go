@@ -7,10 +7,11 @@ import (
 	"github.com/spf13/viper"
 
 	// MySQL driver.
-	"github.com/jinzhu/gorm"
-	_ "github.com/jinzhu/gorm/dialects/mysql"
+	"github.com/jinzhu/gorm"                  //gorm优点在哪？
+	_ "github.com/jinzhu/gorm/dialects/mysql" //这里使用_是用来做什么的？
 )
 
+//定义结构体，同时访问多个数据库
 type Database struct {
 	Self   *gorm.DB
 	Docker *gorm.DB
@@ -68,6 +69,7 @@ func GetDockerDB() *gorm.DB {
 	return InitDockerDB()
 }
 
+//数据库初始化
 func (db *Database) Init() {
 	DB = &Database{
 		Self:   GetSelfDB(),
