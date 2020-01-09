@@ -21,7 +21,18 @@ var (
 func main() {
 	pflag.Parse()
 
-	// init config
+	/*
+		配置文件初始化
+
+		cfg 变量值从命令行 flag 传入，可以传值
+		比如 ./apiserver -c config.yaml，也可以为空，如果为空会默认读取 conf/config.yaml
+
+		问题1: 怎么知道它会去conf目录找配置文件？conf目录名可以随便写？
+
+		conf目录名不能改成其他名称，
+		config.Init() 要看这里的逻辑
+
+	*/
 	if err := config.Init(*cfg); err != nil {
 		panic(err)
 	}
