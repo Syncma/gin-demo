@@ -8,7 +8,7 @@ import (
 
 	// MySQL driver.
 	"github.com/jinzhu/gorm"                  //gorm优点在哪？
-	_ "github.com/jinzhu/gorm/dialects/mysql" //这里使用_是用来做什么的？
+	_ "github.com/jinzhu/gorm/dialects/mysql" //这里使用_是用来做什么的？-不导入初始化
 )
 
 //定义结构体，同时访问多个数据库
