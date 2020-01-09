@@ -17,3 +17,6 @@
 {"level":"INFO","timestamp":"2020-01-06 17:09:07.631","file":"user/create.go:28","msg":"Header Content-Type: "}
 {"level":"DEBUG","timestamp":"2020-01-06 17:09:07.631","file":"user/create.go:30","msg":"username is: [], password is []"}
 {"level":"INFO","timestamp":"2020-01-06 17:11:24.233","file":"config/config.go:72","msg":"Config file changed: D:\\学习\\golang\\apiserver\\conf\\config.yaml"}
+{"level":"ERROR","timestamp":"2020-01-09 13:37:25.377","file":"model/init.go:33","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"INFO","timestamp":"2020-01-09 13:37:25.417","file":"demo06/main.go:59","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2020-01-09 13:37:25.921","file":"demo06/main.go:56","msg":"The router has been deployed successfully."}

@@ -1,0 +1,12 @@
+{"level":"ERROR","timestamp":"2020-01-09 13:59:13.773","file":"model/init.go:32","msg":"Database connection failed. Database name: db_apiserver","data":{"error":"Error 1045: Access denied for user 'root'@'localhost' (using password: YES)"}}
+{"level":"ERROR","timestamp":"2020-01-09 13:59:13.809","file":"model/init.go:32","msg":"Database connection failed. Database name: db_apiserver","data":{"error":"Error 1045: Access denied for user 'root'@'localhost' (using password: YES)"}}
+{"level":"INFO","timestamp":"2020-01-09 13:59:13.822","file":"demo08/main.go:59","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2020-01-09 13:59:14.333","file":"demo08/main.go:56","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2020-01-09 13:59:48.628","file":"middleware/logging.go:84","msg":"0s            | ::1          | GET /v1/user | {code: 10001, message: sql: database is closed}"}
+{"level":"INFO","timestamp":"2020-01-09 14:00:09.165","file":"config/config.go:72","msg":"Config file changed: D:\\学习\\github\\gin-demo\\demo08\\conf\\config.yaml"}
+{"level":"INFO","timestamp":"2020-01-09 14:00:09.166","file":"config/config.go:72","msg":"Config file changed: D:\\学习\\github\\gin-demo\\demo08\\conf\\config.yaml"}
+{"level":"INFO","timestamp":"2020-01-09 14:00:20.883","file":"middleware/logging.go:84","msg":"0s            | ::1          | GET /v1/user | {code: 10001, message: sql: database is closed}"}
+{"level":"ERROR","timestamp":"2020-01-09 14:00:27.672","file":"model/init.go:32","msg":"Database connection failed. Database name: db_apiserver","data":{"error":"Error 1045: Access denied for user 'root'@'localhost' (using password: YES)"}}
+{"level":"INFO","timestamp":"2020-01-09 14:00:27.727","file":"demo08/main.go:59","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2020-01-09 14:00:28.235","file":"demo08/main.go:56","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2020-01-09 14:00:30.876","file":"middleware/logging.go:84","msg":"4.9879ms      | ::1          | GET /v1/user | {code: 0, message: OK}"}
