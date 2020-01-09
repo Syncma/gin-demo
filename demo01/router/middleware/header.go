@@ -46,6 +46,3 @@ func Secure(c *gin.Context) {
 	// Also consider adding Content-Security-Policy headers
 	// c.Header("Content-Security-Policy", "script-src 'self' https://cdnjs.cloudflare.com")
 }
-
-//中间件的意思就是，在一个请求被某个API处理之前需要执行的操作。
-//举个例子，在一个管理系统里面，我要进行一些权限的操作，例如删除、新增、修改某些用户，这三个操作对应三个API

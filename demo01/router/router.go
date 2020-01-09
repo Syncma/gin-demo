@@ -29,6 +29,7 @@ func Load(g *gin.Engine, mw ...gin.HandlerFunc) *gin.Engine {
 	})
 
 	// The health check handlers
+	//这里使用了路由组的概念
 	svcd := g.Group("/api")
 	{
 		svcd.GET("/health", api.HealthCheck)
