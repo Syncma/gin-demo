@@ -9,6 +9,15 @@ import (
 	"apiserver/router"
 
 	"github.com/Syncma/log"
+	/* 这里为啥要使用这个log?
+
+	* 支持日志输出流配置，可以输出到 stdout 或 file，也可以同时输出到 stdout 和 file
+	*支持输出为 JSON 或 plaintext 格式
+	*支持彩色输出
+	*支持 log rotate 功能
+	*高性能
+
+	 */
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"

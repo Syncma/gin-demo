@@ -1,14 +1,14 @@
-runmode: debug                 # 开发模式, debug, release, test
+runmode: debug               # 开发模式, debug, release, test
 addr: :8080                  # HTTP绑定端口
 name: apiserver              # API Server的名字
 url: http://127.0.0.1:8080   # pingServer函数请求的API服务器的ip:port
 max_ping_count: 10           # pingServer函数try的次数
 log:
-  writers: file,stdout
-  logger_level: DEBUG
-  logger_file: log/apiserver.log
-  log_format_text: false
-  rollingPolicy: size
-  log_rotate_date: 1
-  log_rotate_size: 1
-  log_backup_count: 7
+  writers: file,stdout       # 输出位置
+  logger_level: DEBUG        # 日志级别
+  logger_file: log/apiserver.log # 日志文件
+  log_format_text: false     # 日志输出格式,json或者plaintext, false是json格式,true是非json
+  rollingPolicy: size        # rotate依据
+  log_rotate_date: 1         # rotate转存时间
+  log_rotate_size: 1         # rotate转存大小
+  log_backup_count: 7        # 当日志文件达到转存标准时，log 系统会将该日志文件进行压缩备份，这里指定了备份文件的最大个数
